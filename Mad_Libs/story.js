@@ -1,0 +1,63 @@
+/* 
+It was a [adjective1], cold November day.  I woke up to the [adjective2] smell of [type_of_bird] roasting in the [room_in_a_house] downstairs. I [verb1 (past tense)] down the stairs to see if I could help [verb2] the dinner. My mom said, " see if [relative's_name ] needs a fresh [noun1]." So I carried a tray of glasses full of [a_liquid] into the [verb3 ending in -ing] room. When I got there, I couldn't believe my [part_of_the_body (plural)]! There were [plural noun2] [verb4 ending in -ing] on the [noun3]!
+*/
+var questions = 14;
+var questionsLeft = ' [' + questions + ' questions left]';
+var adjective1 = prompt("Please type an adjective" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var adjective2 = prompt("Please type another adjective" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var type_of_bird = prompt("Please type a type of bird" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var room = prompt("Please type a room in the house" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb1 = prompt("Please type a verb in the past tense" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb2 = prompt("Please type a verb" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var name = prompt("Please type a relative's name" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun1 = prompt("Please type a noun" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var liquid = prompt("Please type a liquid" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb3 = prompt("Please type a verb that ends in -ing" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var body = prompt("Please type a part of the body (plural)" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun2 = prompt("Please type a plural noun" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb4 = prompt("Please type a verb ending in -ing" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun3 = prompt("Finally, please type another plural noun" + questionsLeft);
+
+alert("All done. Ready for the message?");
+
+var sentence = "<h2>It was a " + adjective1;
+sentence += ", cold November day.  I woke up to the " + adjective2;
+sentence += " smell of " + type_of_bird;
+sentence += " roasting in the " + room;
+sentence += " downstairs.  I " + verb1;
+sentence += " down the stairs to see if I could help " + verb2;
+sentence += " the dinner.  My mom said, 'see if " + name;
+sentence += " needs a fresh " + noun1;
+sentence += ".'  So I carried a tray of glasses full of " + liquid;
+sentence += " into the " + verb3;
+sentence += " room.  when I got there, I couldn't believe my " + body;
+sentence += "!  There were " + noun2 + " " + verb4;
+sentence += " on the " + noun3;
+sentence += "!</h2>";
+document.write(sentence);
